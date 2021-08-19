@@ -1,0 +1,30 @@
+.card {
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 8%;
+
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    font-weight: 900;
+    font-size: 30px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

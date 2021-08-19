@@ -1,0 +1,28 @@
+<div class="flexCenter heading">
+  ScoreCard v1.0
+</div>
+<div class="flexCenter" >
+
+  <div class="card">
+    <div class="flexContainer">
+      <div class="circle">
+        {{firstValue}}
+      </div>
+      <div class="circle">
+        {{SecondValue}}
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="flexCenter" *ngIf="!showButtons">
+      <div>
+        Hurray! {{firstValue==5?'PLAYER ONE':'PLAYER TWO'}} won!!
+      </div>
+      <div>
+        <button (click)="reset()">reset</button>
+      </div>
+    </div>
+    <div class="flexCenter">
+      <button (click)="first()" [disabled]="!showButtons">first</button>
+      <button (click)="second()" [disabled]="!showButtons" >Second</button>
+    </div>
